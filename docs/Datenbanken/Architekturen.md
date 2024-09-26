@@ -18,7 +18,7 @@ Diese Art an Datenbank existiert meist als Client-/Server Anwendung und wird mei
 - MariaDB
 - MySQL
 - OracleDB
-- Prostgres
+- Postgres
 - MangoDB
 
 

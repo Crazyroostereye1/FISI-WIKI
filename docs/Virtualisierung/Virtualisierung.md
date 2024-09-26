@@ -1,9 +1,8 @@
 ---
 tags:
-  - FISI
-  - Ausbildung
   - Virtualisierung
   - VM
+author: Julian Beittel
 ---
 # Virtualisierung
 Unter Virtualisierung versteht man das Vereinen oder aufteilen von Ressourcen. Das heißt das die Hardware Komponenten die im Physischen Gerät eingebaut ist, wird von Virtualisierungssoftware aufgeteilt oder mit eine Physischen Gerät verbunden und vereint wird.
@@ -42,3 +41,10 @@ Es gibt aber weiter Vorteile die auch oft verwendet werden sind höher Sicherhei
 | Legacy Support                | Es ermöglich auch Software die für alte Hardware Gebaut worden ist mit einer VM laufen zu lassen                                                             |
 | Software-Tests & -Entwicklung | Erleichter Entwicklern deren Dienste für Hardware und Betriebssystem zu Entwickeln ohne eine Physischen Computer zu kaufen (Nicht möglich mit MacOS und IOS) |
 ### Nachteile
+- **Komplexität**
+  VMs sind sind meist in Größeren einsatzgbieten ist meist Komplezierter zum einrichten und instandhaltung als eine einfacher "Bare-Metall" Server
+- **Leistung Verlust**
+  Der Virtualiserungsplatform (Hypervisor) braucht eine gewisse menge von Overhead welches bei einem Physischen Machine direkt in das System geht.
+
+## VLANs
+[Werden in der Kategorie Netzwerk besprochen](../Netzwerke/VLANS.md)
