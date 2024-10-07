@@ -28,6 +28,7 @@ Als Nächstes betrachten wir die Beziehung zwischen einer Entität und einer Bez
 | 1-1       | Eine Eins zu Eins Beziehung beschreibt das Entität 1 und Entität zwei jeweilig min **nur** einen vom anderen eine Beziehung hat. z.B. Eine Person hat nur eine Leber und jede Leber hat nur eine Person                     |
 | 1-n       | Eine eins zu N oder eins zu mehreren Beziehung beschreibt die wenn ein Entität eine beziehung mit meheren von einer entität haben kann. z.B. Eine Abteilung hat Mehrere Mitarbeiter aber ein Mitarbeiter hat eine Abteilung |
 | n-m       | Eine N zu M oder Mehrere zu Mehrere Beziehung beshreibt wenn eine Entität eine Bezhiung mit mehreren Version von einer Entität und umgekehrt                                                                                |
+
 ### Übertragen in eine Relationale Datenbank 
 Um es in eine Realationale Datenbank zu konvertieren is relative einfache. Jede Entität ist eine Tabelle mit den Spalten der Attribute. Die Beziehungen werden mit Foraign Key, in die jeweiligen Tabellen verbunden. Ausnahmen sind *N zu M* Beziehungen oder Beziehungen mit Attributen die eine Zwischen Tabelle benötigen.
 
