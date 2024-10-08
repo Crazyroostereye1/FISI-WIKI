@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../../img/favicon.ico" />
+    <title>Virtualisierung - FISI Wiki</title>
+    <link rel="stylesheet" href="../../css/theme.css" />
+    <link rel="stylesheet" href="../../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Virtualisierung";
+        var mkdocs_page_input_path = "Virtualisierung/Virtualisierung.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href="../.." class="icon icon-home"> FISI Wiki
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../..">Willkommen</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../Client-Server/">Client-Server Modell</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../../Diagramme/">Diagramme</a>
+                </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Datenbanken</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Datenbanken/Architekturen/">Architekturen</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Datenbanken/Diagramme/">Diagramme</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Netzwerke</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Netzwerke/IPv6/">IPv6</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Netzwerke/VLANS/">VLANs</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Projektmanagment</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../Projektmanagment/Agile/">Agile</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">UML</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../../UML/Aktivit%C3%A4tsdiagramm/">Aktivitätsdiagramm</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Virtualisierung</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../Cloud/">Cloud</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="#">Virtualisierung</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#visualisierte-anwendungen">Visualisierte Anwendungen</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#virtuelle-machine-vm">Virtuelle Machine (VM)</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#warum-benutzt-man-vms">Warum benutzt man VMs</a>
+        <ul>
+    <li class="toctree-l4"><a class="reference internal" href="#vorteile">Vorteile</a>
+    </li>
+        </ul>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#vlans">VLANs</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../..">FISI Wiki</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../.." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">Virtualisierung</li>
+      <li class="breadcrumb-item active">Virtualisierung</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="virtualisierung">Virtualisierung</h1>
+<p>Unter Virtualisierung versteht man das Vereinen oder aufteilen von Ressourcen. Das heißt das die Hardware Komponenten die im Physischen Gerät eingebaut ist, wird von Virtualisierungssoftware aufgeteilt oder mit eine Physischen Gerät verbunden und vereint wird.</p>
+<h2 id="visualisierte-anwendungen">Visualisierte Anwendungen</h2>
+<p>Hier ist eine Reihe von Sachen die Formen der Virtualisierung sind mit Beispielen:</p>
+<table>
+<thead>
+<tr>
+<th>Komponente</th>
+<th>Beispiel</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Prozessor</td>
+<td>Intel-VT (Intel Virtualization Technology)<br>AMD-VT (AMD Virtualization Technology)<br>Hyperthreading</td>
+</tr>
+<tr>
+<td>System / Hardware</td>
+<td>Emulatoren<br>Virtuelle Machine (VMs)</td>
+</tr>
+<tr>
+<td>Betriebssystem</td>
+<td>Container<br>Zoning<br>Jails</td>
+</tr>
+<tr>
+<td>Anwendungen</td>
+<td>Laufzeitumgebungen<br>Sandboxed Applikationen</td>
+</tr>
+<tr>
+<td>Desktop</td>
+<td>Terminalserver</td>
+</tr>
+<tr>
+<td>Rechenzentrum</td>
+<td>SDDC (Software Defined Datacenter)<br>Cloud-Computing</td>
+</tr>
+<tr>
+<td>RAM</td>
+<td>Auslagerungsdateien</td>
+</tr>
+<tr>
+<td>Festplatten</td>
+<td>Partitionierung<br>Logical Volume Mapping</td>
+</tr>
+<tr>
+<td>Storage</td>
+<td>Volumen</td>
+</tr>
+<tr>
+<td>Netzwerke</td>
+<td>VLANs</td>
+</tr>
+</tbody>
+</table>
+<h2 id="virtuelle-machine-vm">Virtuelle Machine (VM)</h2>
+<p>Virtuelle Machine sind komplett Virtuelle System, das heißt es wird schon auf dem Hardware level visualisiert.  Darauf kann mann sich genau verhalten wie auf einem Physischen gerät. </p>
+<h3 id="warum-benutzt-man-vms">Warum benutzt man VMs</h3>
+<p>Virtuelle Maschinen kommen mit vielen Vorteilen. Einer der Größten und meist genannten Vorteile sind, <strong>Platz und Ressourcen Effizienz</strong>. Das bedeutet das man nicht für jedes Programm oder Software eine eigen Physischen Machine hinstellen muss und es in einer Machine zusammenfassen. Die <strong>Ressourcen Effizienz</strong> ist auch genannt, da man hart einen Dienst beschränken kann nur soviel Ressourcen zu nutzen und das laufen von mehren Dienste Parallel auf einer Physischen Machine, die sonst nie parallel Laufen könnten.</p>
+<p>Es gibt aber weiter Vorteile die auch oft verwendet werden sind höher Sicherheit, Flexibilität und Optimierung von Software-Test und Entwicklung.</p>
+<h4 id="vorteile">Vorteile</h4>
+<table>
+<thead>
+<tr>
+<th>Vorteil</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Ressourcen Effizienz</td>
+<td>Mann kann mehrere Dienste parallel auf einer Physischen Machine Laufen lassen, die sonst nie auf der selben machine Laufen könnten.</td>
+</tr>
+<tr>
+<td>Platz Effizienz</td>
+<td>Ähnlich wie die Ressourcen Effizienz kann mann viele Physische Machinen auf einen Starke Machine mit VMs vereint werden.</td>
+</tr>
+<tr>
+<td>Flexibilität</td>
+<td>Virtuelle Machinen können einfach auf andere Servern verschoben oder Kopiert werden.</td>
+</tr>
+<tr>
+<td>höher Sicherheit</td>
+<td>Mann kann relative einfach Machinen von einander Isolieren, und schnell runtergerissen werden.</td>
+</tr>
+<tr>
+<td>Legacy Support</td>
+<td>Es ermöglich auch Software die für alte Hardware Gebaut worden ist mit einer VM laufen zu lassen</td>
+</tr>
+<tr>
+<td>Software-Tests &amp; -Entwicklung</td>
+<td>Erleichter Entwicklern deren Dienste für Hardware und Betriebssystem zu Entwickeln ohne eine Physischen Computer zu kaufen (Nicht möglich mit MacOS und IOS)</td>
+</tr>
+<tr>
+<td>### Nachteile</td>
+<td></td>
+</tr>
+<tr>
+<td>- <strong>Komplexität</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>VMs sind sind meist in Größeren einsatzgbieten ist meist Komplezierter zum einrichten und instandhaltung als eine einfacher "Bare-Metall" Server</td>
+<td></td>
+</tr>
+<tr>
+<td>- <strong>Leistung Verlust</strong></td>
+<td></td>
+</tr>
+<tr>
+<td>Der Virtualiserungsplatform (Hypervisor) braucht eine gewisse menge von Overhead welches bei einem Physischen Machine direkt in das System geht.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="vlans">VLANs</h2>
+<p><a href="../../Netzwerke/VLANS/">Werden in der Kategorie Netzwerk besprochen</a></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../Cloud/" class="btn btn-neutral float-left" title="Cloud"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+      <p>CC BY-NC</p>
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../Cloud/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "../..";</script>
+    <script src="../../js/theme_extra.js"></script>
+    <script src="../../js/theme.js"></script>
+      <script src="../../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
